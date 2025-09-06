@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Shahnawaz Khan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: rgb(0, 0, 33);
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      background: rgb(18, 18, 62);
+      padding: 15px 30px;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      max-width: 900px;
+      margin: 50px auto;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    }
+
+    .contact-section h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #00bcd4;
+    }
+
+    .contact-details {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .contact-details p {
+      margin: 8px 0;
+      font-size: 1.1rem;
+    }
+
+    .contact-details a {
+      color: #00bcd4;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contact-details a:hover {
+      color: #ff4081;
+    }
+
+    /* Form */
+    form {
+      display: grid;
+      gap: 15px;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      font-size: 1rem;
+    }
+
+    form textarea {
+      height: 120px;
+      resize: none;
+    }
+
+    /* Contact Me Button */
+    .contact-btn {
+      background: linear-gradient(135deg, #ff512f, #dd2476, #1e3c72, #2a5298);
+      background-size: 300% 300%;
+      color: white;
+      border: none;
+      padding: 14px;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      animation: gradientBG 6s ease infinite;
+    }
+
+    .contact-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .contact-section {
+        padding: 20px;
+      }
+
+      .contact-section h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    Contact Me
+  </header>
+
+  <section class="contact-section">
+    <h1>Get in Touch</h1>
+
+    <!-- Contact Details -->
+    <div class="contact-details">
+      <p>📞 Phone: <b>03369712681</b></p>
+      <p>📧 Email: <b>shahnawazkhan23230090@gmail.com</b></p>
+      <p>🎯 Fiverr: <a href="https://www.fiverr.com/users/shahnawazkha900" target="_blank">My Fiverr Profile</a></p>
+    </div>
+
+    <!-- Contact Form -->
+    <form action="#" method="post">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="contact-btn">Send Message</button>
+    </form>
+  </section>
+</body>
+
+</html>

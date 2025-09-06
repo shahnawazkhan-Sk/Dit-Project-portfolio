@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Shahnawaz Khan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+    body{
+      font-family:'Poppins',sans-serif;
+      background:#000021;
+      color:#fff;
+    }
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      height:80px;
+      background:#12123E;
+      padding:0 20px;
+    }
+    nav h3{
+      font-size:1.8rem;
+      font-weight:600;
+    }
+    nav ul{
+      display:flex;
+      list-style:none;
+    }
+    nav ul li{
+      margin:0 20px;
+    }
+    nav ul li a{
+      text-decoration:none;
+      color:#fff;
+      transition:0.3s;
+    }
+    nav ul li a:hover{
+      color:#B4B4EA;
+    }
+
+    /* ===== Services Section ===== */
+    .services-section{
+      max-width:1100px;
+      margin:80px auto;
+      text-align:center;
+      padding:20px;
+    }
+    .services-section h1{
+      font-size:2.5rem;
+      margin-bottom:10px;
+      color:#fff;
+    }
+    .services-section p{
+      color:grey;
+      margin-bottom:40px;
+    }
+    .services-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+      gap:25px;
+    }
+    .service-card{
+      background:#1b1b3a;
+      border-radius:12px;
+      padding:30px 20px;
+      box-shadow:0 0 20px rgba(0,0,0,0.6);
+      transition:0.3s;
+      cursor:pointer;
+    }
+    .service-card:hover{
+      transform:translateY(-10px) scale(1.05);
+      box-shadow:0 0 20px red, 0 0 40px blue, 0 0 60px purple;
+    }
+    .service-card img{
+      width:70px;
+      height:70px;
+      object-fit:cover;
+      margin-bottom:20px;
+    }
+    .service-card h3{
+      font-size:1.3rem;
+      margin-bottom:10px;
+      color:#fff;
+    }
+    .service-card p{
+      font-size:0.9rem;
+      color:#ccc;
+      line-height:1.5;
+    }
+
+    /* Footer */
+    footer {
+      background:#111;
+      color:white;
+      padding:30px 50px;
+      margin-top:50px;
+      width:100%;
+    }
+    .footer {
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:20px;
+    }
+    .footer-first h3{
+      margin:0;
+      font-size:22px;
+      font-weight:600;
+    }
+    .footer ul{
+      list-style:none;
+      padding:0;
+      margin:0;
+    }
+    .footer ul li{
+      margin:6px 0;
+      font-size:16px;
+      cursor:pointer;
+      transition:color 0.3s ease;
+    }
+    .footer ul li:hover{
+      color:#00bcd4;
+    }
+    .text-center{
+      text-align:center;
+      margin-top:20px;
+      font-size:14px;
+      border-top:1px solid rgba(255,255,255,0.2);
+      padding-top:10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h3>Shahnawaz Khan Portfolio</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="Contect Me.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Services Section -->
+  <section class="services-section">
+    <h1>My Services</h1>
+    <p>Here are the services I provide with passion and dedication.</p>
+    
+    <div class="services-container">
+      <div class="service-card">
+        <img src="web3.jpeg" alt="HTML">
+        <h3>Web Development</h3>
+        <p>I build responsive and modern websites using HTML, CSS and JavaScript.</p>
+      </div>
+      <div class="service-card">
+        <img src="uiux.jpeg" alt="Design">
+        <h3>UI/UX Design</h3>
+        <p>Creative, user-friendly and eye-catching designs to enhance user experience.</p>
+      </div>
+      <div class="service-card">
+        <img src="dataentry.jpeg" alt="Data Entry">
+        <h3>Data Entry</h3>
+        <p>Fast and accurate data entry services with attention to detail.</p>
+      </div>
+      <div class="service-card">
+        <img src="cyber.jpeg" alt="Cyber Security">
+        <h3>Cyber Security</h3>
+        <p>Learning and implementing techniques to secure web applications.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer">
+      <div class="footer-first">
+        <h3>Sk Developer Portfolio</h3>
+      </div>
+      <div class="footer-Second">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Projects</li>
+          <li>Contact Me</li>
+        </ul>
+      </div>
+      <div class="footer-third">
+        <ul>
+          <li>Privacy Policy</li>
+          <li>Terms</li>
+          <li>Support</li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center">
+      www.ShahnawazkhanPortfolio.com | All Rights Reserved
+    </div>
+  </footer>
+</body>
+</html>
